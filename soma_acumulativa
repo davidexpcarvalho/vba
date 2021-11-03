@@ -1,0 +1,20 @@
+Sub Exercício()
+    
+    Dim V1 As Variant 'Variável para qualquer valor
+    Dim soma As Double 'Variável total de valor
+
+    soma = 0 'Definir como 0 para recomeçar a contagem
+    Do
+        V1 = InputBox("Insira um valor para somar:", "Soma Acumulativa") 'Prompt de imput
+        If Not IsNumeric(V1) Then 'Verificar se é número
+            If V1 = vbNullString Then 'Verificar se está vazio ou se clicou em cancelar
+                Exit Do 'Se sim, sair
+            End If
+            MsgBox "Insira um valor numérico!", vbCritical, "Soma Acumulativa" 'Solicitar valor numérico se não for número
+        Else
+            soma = soma + V1 'Soma Acumulativa
+        End If
+    Loop Until V1 = vbNullString 'Repetir até vazio ou se clicou em cancelar
+        MsgBox "O valor somado até agora foi de " & soma & ".", , "Soma Acumulativa" 'Mostrar valor total acumulado
+
+End Sub
