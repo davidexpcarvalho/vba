@@ -1,0 +1,6 @@
+Sub Exercício()
+    
+    'Altere para a cor RGB que deseja
+    Selection.Interior.Color = RGB(153, 204, 0)
+
+End Sub
