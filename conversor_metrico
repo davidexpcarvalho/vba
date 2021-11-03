@@ -1,0 +1,10 @@
+Sub Exercicio()
+
+    Dim cm As Double
+    Dim inc As Double
+      
+    inc = InputBox("Escreva o valor em polegadas que deseja converter", "Conversor")
+    cm = inc * 2.54
+    MsgBox (inc & " polegadas equivalem a " & cm & " centímetros.")
+    
+End Sub
